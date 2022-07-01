@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+// import pdf from "../../Assets/MasaiUpdated.pdf";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -39,7 +40,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+         
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -83,13 +84,13 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
+              {/* <Nav.Link
                 as={Link}
-                to="/resume"
+                // to={"/"}
                 onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
+              > */}
+               <a style={{color:"white",textDecoration:"none",top:"10px"}} href="https://drive.google.com/file/d/1qGrVTx13qEqQIQfUoYElbo1lT_mIWZ4R/view?usp=sharing"><CgFileDocument style={{ marginBottom: "2px" }} /> Resume</a> 
+              {/* </Nav.Link> */}
             </Nav.Item>
 
             <Nav.Item>
